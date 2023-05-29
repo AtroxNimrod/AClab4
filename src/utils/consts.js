@@ -1,0 +1,6 @@
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const TRACK_ROUTE = '/'
+export const RECORDS_ROUTE = '/records'
+export const ACCOUNTS_ROUTE = '/accounts'
+export const ACCOUNT_ROUTE = '/account'
