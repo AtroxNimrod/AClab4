@@ -4,20 +4,14 @@ FROM node
 # Setăm directorul de lucru în container
 WORKDIR /app
 
-# Copiem fișierele pachetelor (package.json și package-lock.json) în container
-# COPY package*.json ./
-
-# RUN npm install
-
-# Instalăm dependințele
-
 
 # Copiem restul fișierelor proiectului în container
 COPY . .
 
+#instalăm dependețele
 RUN npm install
 
-# Expunem portul 3000 (sau portul pe care îl utilizați în aplicația React)
+# Expunem portul 3000 (sau portul utilizat în React)
 EXPOSE 3000
 
 # Comanda pentru a rula aplicația React
